@@ -1,0 +1,12 @@
+--- ./SConstruct.orig	2012-07-20 15:40:07.000000000 +0900
++++ ./SConstruct	2013-02-02 15:25:59.153985840 +0900
+@@ -369,6 +369,9 @@
+ vars.Add(("cpppath", "Additional include paths (semicolon separated)", ""))
+ vars.Add(("libpath", "Additional library paths (semicolon separated)", ""))
+ 
++vars.Add(("CXX", "C++ Compiler", "g++"))
++vars.Add(("CC", "C Compiler", "gcc"))
++
+ env = Environment(variables=vars)
+ 
+ Help(vars.GenerateHelpText(env))

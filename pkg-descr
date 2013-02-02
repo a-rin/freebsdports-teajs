@@ -1,0 +1,4 @@
+A server-side Javascript language.
+includes IO, GD, MySQL, Sockets, Templating, FastCGI and Apache module.
+
+WWW: http://code.google.com/p/teajs/

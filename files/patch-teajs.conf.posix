@@ -1,0 +1,11 @@
+--- ./teajs.conf.posix.orig	2012-07-20 15:40:07.000000000 +0900
++++ ./teajs.conf.posix	2013-02-02 15:20:21.705985506 +0900
+@@ -3,7 +3,7 @@
+ 
+ // put default .js and .so files here
+ // NOTE: this was called "Config.libraryPath" in older versions of TeaJS
+-require.paths.push("/usr/lib/teajs");
++require.paths.push("%%PREFIX%%/lib/teajs");
+ 
+ // name of session cookie
+ Config["sessionCookie"] = "V8SID";

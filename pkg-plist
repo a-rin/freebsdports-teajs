@@ -1,0 +1,44 @@
+bin/tea
+etc/teajs.conf.dist
+@exec %D/sbin/apxs -e -a -n teajs %D/mod_teajs.so
+%%APACHEMODDIR%%/mod_teajs.so
+@unexec %D/sbin/apxs -e -A -n teajs %D/mod_teajs.so
+%%APACHEETCDIR%%/Includes/teajs.conf
+lib/teajs/GL.so
+lib/teajs/Jst.js
+lib/teajs/active_record.js
+lib/teajs/assert.js
+lib/teajs/base64.js
+lib/teajs/binary-b.js
+lib/teajs/binary-b.so
+lib/teajs/binary.js
+lib/teajs/binary.so
+lib/teajs/dom.js
+lib/teajs/eventloop.js
+lib/teajs/exif.js
+lib/teajs/fibers.so
+lib/teajs/fs.so
+lib/teajs/gd.so
+lib/teajs/getopt.js
+lib/teajs/hash.js
+lib/teajs/html.js
+lib/teajs/http.js
+lib/teajs/js.js
+lib/teajs/jsonRpcHandler.js
+lib/teajs/mail.js
+lib/teajs/memcached.so
+lib/teajs/mysql.so
+lib/teajs/pgsql.so
+lib/teajs/process.so
+lib/teajs/profiler.so
+lib/teajs/query.js
+lib/teajs/session.js
+lib/teajs/socket.so
+lib/teajs/sprintf.js
+lib/teajs/sqlite.so
+lib/teajs/template.js
+lib/teajs/test.js
+lib/teajs/tls.so
+lib/teajs/websocket.js
+lib/teajs/zlib.so
+@dirrmtry lib/teajs
