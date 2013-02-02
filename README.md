@@ -2,11 +2,11 @@
 ##BUILD&INSTALL
     # make
     # make install
-    # /usr/local/bin/rc.d/apache restart
+    # /usr/local/etc/rc.d/apache22 restart
 
 ##UNINSTALL
     # make deinstall
-    # /usr/local/bin/rc.d/apache restart
+    # /usr/local/etc/rc.d/apache22 restart
 
 ##Tested Environment
 FreeBSD stable/9 amd64
