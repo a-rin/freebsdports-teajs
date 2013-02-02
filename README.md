@@ -12,6 +12,6 @@
 FreeBSD stable/9 amd64
 
 ##TODO
-Makefile: options
-src/lib/xdom: cant compile
+-Makefile: options
+-src/lib/xdom: cant compile
 
