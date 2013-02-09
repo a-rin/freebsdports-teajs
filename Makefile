@@ -44,6 +44,9 @@ post-configure:
 do-install:
 	${INSTALL_PROGRAM} ${INSTALL_WRKSRC}/tea ${PREFIX}/bin/
 	${INSTALL_DATA} ${INSTALL_WRKSRC}/teajs.conf.dist ${PREFIX}/etc/
+	if [ ! -f ${PREFIX}/etc/teajs.conf ]; then \
+		${CP} -p ${PREFIX}/etc/teajs.conf.dist ${PREFIX}/etc/teajs.conf; \
+	fi
 	${MKDIR} ${PREFIX}/lib/teajs
 	${INSTALL_LIB} ${INSTALL_WRKSRC}/lib/*.so ${PREFIX}/lib/teajs/
 	${INSTALL_DATA} ${INSTALL_WRKSRC}/lib/*.js ${PREFIX}/lib/teajs/
