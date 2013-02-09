@@ -14,7 +14,6 @@
 FreeBSD stable/9 amd64
 
 ##TODO
-- Makefile: automatic teajs.conf
 - Makefile: options
 - src/lib/xdom: cant compile
 
