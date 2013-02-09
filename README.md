@@ -2,8 +2,6 @@
 ##BUILD&INSTALL
     # make
     # make install
-    # cd /usr/local/etc
-    # cp teajs.conf.dist teajs.conf
     # /usr/local/etc/rc.d/apache22 restart
 
 ##UNINSTALL
