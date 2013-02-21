@@ -9,7 +9,8 @@
     # /usr/local/etc/rc.d/apache22 restart
 
 ##Tested Environment
-FreeBSD stable/9 amd64
+- FreeBSD stable/9 amd64
+- FreeBSD stable/7 i386
 
 ##TODO
 - src/lib/xdom: cant compile
