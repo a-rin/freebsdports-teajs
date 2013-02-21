@@ -12,6 +12,5 @@
 FreeBSD stable/9 amd64
 
 ##TODO
-- Makefile: options
 - src/lib/xdom: cant compile
-
+- Makefile: option FCGI and MODULE are exclusive
