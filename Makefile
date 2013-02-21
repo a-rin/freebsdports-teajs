@@ -70,7 +70,7 @@ PLIST_SUB+=	MYSQL="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MMEMCACHED}
-LIBDEPENDS+=	memcached:${PORTSDIR}/databases/libmemcached
+LIB_DEPENDS+=	memcached:${PORTSDIR}/databases/libmemcached
 SCONS_ARGS+=	memcached=1
 PLIST_SUB+=	MEMCACHED=""
 .else
@@ -106,7 +106,7 @@ PLIST_SUB+=	SQLITE="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MGD}
-LIBDEPENDS+=	gd:${PORTSDIR}/graphics/gd
+LIB_DEPENDS+=	gd:${PORTSDIR}/graphics/gd
 SCONS_ARGS+=	gd=1
 PLIST_SUB+=	GD=""
 .else
@@ -155,7 +155,7 @@ PLIST_SUB+=	TLS="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MXDOM}
-LIBDEPENDS+=	xerces-c:${PORTSDIR}/textproc/xerces-c3
+LIB_DEPENDS+=	xerces-c:${PORTSDIR}/textproc/xerces-c3
 SCONS_ARGS+=	xdom=1 \
 		xercesc_include=${LOCALBASE}/include/xercesc
 PLIST_SUB+=	XDOM=""
