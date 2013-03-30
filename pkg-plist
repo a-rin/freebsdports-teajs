@@ -15,6 +15,7 @@ lib/teajs/base64.js
 %%BINARY_B%%lib/teajs/binary-b.so
 lib/teajs/binary.js
 lib/teajs/binary.so
+lib/teajs/bufferpack.js
 lib/teajs/dom.js
 lib/teajs/eventloop.js
 lib/teajs/exif.js
@@ -34,7 +35,9 @@ lib/teajs/mail.js
 %%PROCESS%%lib/teajs/process.so
 %%PROFILER%%lib/teajs/profiler.so
 lib/teajs/query.js
+lib/teajs/redis.js
 lib/teajs/session.js
+lib/teajs/sphinxapi.js
 %%SOCKET%%lib/teajs/socket.so
 lib/teajs/sprintf.js
 %%SQLITE%%lib/teajs/sqlite.so
