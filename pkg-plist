@@ -2,9 +2,9 @@
 @unexec if cmp -s %D/etc/teajs.conf %D/etc/teajs.conf.dist; then rm -f %D/etc/teajs.conf; fi
 etc/teajs.conf.dist
 @exec [ -f %B/teajs.conf ] || cp %B/%f %B/teajs.conf
-%%MODULE%%@exec %D/sbin/apxs -e -a -n teajs %D/mod_teajs.so
+%%MODULE%%@unexec %D/sbin/apxs -e -A -n teajs %D/%%APACHEMODDIR%%/mod_teajs.so
 %%MODULE%%%%APACHEMODDIR%%/mod_teajs.so
-%%MODULE%%@unexec %D/sbin/apxs -e -A -n teajs %D/mod_teajs.so
+%%MODULE%%@exec %D/sbin/apxs -e -a -n teajs %D/%f
 %%MODULE%%%%APACHEETCDIR%%/Includes/teajs.conf
 %%GL%%lib/teajs/GL.so
 lib/teajs/Jst.js
